@@ -16,10 +16,16 @@ def is_simple_number(num):
 
 def find_simple_factors(number):
     new_list = []
-    for i in range(1, number + 1):
-        if number % i == 0 and is_simple_number(i):
-            new_list.append(i)
-    return new_list
+    num = number
+    if num == 1:
+        return new_list
+    else:    
+        for i in range(1, num + 1):
+            if num % i == 0 and is_simple_number(i):
+                new_list.append(i)
+                num = int(num / i)   
+                break    
+        return new_list + find_simple_factors(num)
 
 
 a = int(input("Введите число N: "))
