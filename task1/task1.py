@@ -15,7 +15,7 @@ def calc_factor(num):
     return result
 
 
-fract_accur = float(input("Введите необходимую точноть: "))
+fract_accur = float(input("Введите необходимую точность: "))
 rounded_pi = round(math.pi, calc_factor(fract_accur))
 print(rounded_pi)
 
