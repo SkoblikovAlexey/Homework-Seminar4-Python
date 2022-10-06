@@ -8,9 +8,10 @@
 import random
 
 k = int(input("Введите число k: "))
-
 koef_list = []
-for i in range(k + 1):
+koef_list.append(random.randint(1, 100))
+
+for i in range(k):    
     koef_list.append(random.randint(0, 100))
 print(koef_list)
 equation = ""
