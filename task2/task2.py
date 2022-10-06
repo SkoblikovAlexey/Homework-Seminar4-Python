@@ -31,3 +31,20 @@ def find_simple_factors(number):
 a = int(input("Введите число N: "))
 simple_num_list = find_simple_factors(a)
 print(f'Список простых множителей введенного числа {a}: {simple_num_list}')
+
+
+# ============================ Пример решения с семинара
+# def primfacs(n):
+#    i = 2
+#    primfac = []
+#    while i * i <= n:
+#        while n % i == 0:
+#            primfac.append(i)
+#            n = n / i
+#        i = i + 1
+#    if n > 1:
+#        primfac.append(int(n))
+#    return primfac
+
+# n = int(input('Введите число: '))
+# print(primfacs(n))
